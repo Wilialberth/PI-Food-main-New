@@ -1,7 +1,7 @@
 const axios = require ('axios')
 const { Recipe, Diet } = require('../db')
 const { API_URL, API_KEY } = process.env;
-
+//Los controllers sí tienen habilitado interactuar con los models.
 
 const getTotalDiets = async (req, res, next) =>{
     try {
@@ -14,7 +14,7 @@ const getTotalDiets = async (req, res, next) =>{
                     finalDiets.push(diet);
                 }
             })
-            finalDiets.forEach(diets=> { // cambié diets por diet, revisar
+            finalDiets.forEach(diet=> { // cambié diets por diet, revisar
             Diet.findOrCreate({
                 where:{
                     name: diet}

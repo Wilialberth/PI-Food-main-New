@@ -8,7 +8,7 @@ const { Recipe, Diet } = require('../db');
 const router = Router();
 
 
-router.get('/', async (req, res, next) =>{
+router.get('/', async (req, res, next) =>{ // Revisar '/recipes/name'
     const { name } = req.query
     const recipesTotal = await getTotalRecipes();
     try{
@@ -28,7 +28,7 @@ router.get('/', async (req, res, next) =>{
 })   
 
 
-router.get('/:idReceta', async (req,res,next) =>{
+router.get('/:idReceta', async (req,res,next) =>{ // /recipes/:idRecipe
     const { idReceta }  = req.params
     const recipesTotal = await getTotalRecipes();
     const recipeId = recipesTotal.filter(e => e.id.toString() === idReceta.toString())
@@ -57,7 +57,7 @@ router.post('/', async (req, res, next) => {
             step,
             createdInDb,
         })
-        const dietCreated = await Diet.findAll({
+        const dietCreated = await Diet.findAll({ // hago await ya que me devuelve una promesa y espero a que esa promesa se resuelva y ese valor lo voy a guardar en await
             where:{
                 name : diet
             }
