@@ -66,6 +66,7 @@ router.post('/', async (req, res, next) => {
         res.status(201).send('Recipe created succesfully')  
     } catch (error) {
         console.log(error)
+        
     }
 })
 
