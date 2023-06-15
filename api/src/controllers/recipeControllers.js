@@ -29,8 +29,8 @@ const getApiRecipes =  async () => {
 const getDbRecipes = async () => {
     return await Recipe.findAll({
         include: {
-            model: Diet,
-            attributes: ['name'],
+            model: Diet, // me trae un array Diet con los arrays que tengan name, solo name.
+            attributes: ['name'], // limpio mi dbRecipes. Es un array de nombre de atributos en el cual me quedo solo con el name.
             through: {
                 attributes: []
             }
