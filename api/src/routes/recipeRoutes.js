@@ -65,6 +65,7 @@ router.post('/', async (req, res, next) => {
         recipeCreated.addDiet(dietCreated)
         res.status(201).send('Recipe created succesfully')  
     } catch (error) {
+        next(error) // agrego next(error)
         //console.log(error)
         res.send(error) // agrego res.send
     }
