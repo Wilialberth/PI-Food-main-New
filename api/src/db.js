@@ -35,8 +35,8 @@ const { Recipe, Diet } = sequelize.models;
 // Aca vendrian las relaciones
 // Product.hasMany(Reviews);
 
-Diet.belongsToMany(Recipe, {through: "Diet_Recipe"});
-Recipe.belongsToMany(Diet, {through: "Diet_Recipe"});
+Diet.belongsToMany(Recipe, {through: "Diet_Recipe"}); // sequelize "me crea" la FOREING KEY
+Recipe.belongsToMany(Diet, {through: "Diet_Recipe"});  // sequelize "me crea" la FOREING KEY
 
 module.exports = {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');

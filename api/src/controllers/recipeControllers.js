@@ -4,7 +4,7 @@ const { Recipe, Diet } = require('../db')
 
 
 const getApiRecipes =  async () => {
-    const {API_URL, API_KEY} = process.env;
+    const {API_URL, API_KEY} = process.env; // revisar cómo queda si paso esta línea a la línea 4
   
     const recipesUrl = await axios.get(`${API_URL}complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=100&offset=100`, {headers:{'Accept-Encoding': 'identity'}});
     const recipesApi = await recipesUrl.data.results.map(e => {
