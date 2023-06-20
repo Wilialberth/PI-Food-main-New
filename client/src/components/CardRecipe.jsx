@@ -1,7 +1,9 @@
 import React from "react";
 import './CardRecipe.css'
 
-export default function CardRecipe({ name, image, diets, healthScore }){ // quité id
+//Este componente puede ser utilizado en otros componentes de React para mostrar información de una receta específica, pasando las props correspondientes al componente CardRecipe.
+
+export default function CardRecipe({ name, image, diets, id, healthScore }){ // quité id
     return (
         <div className="card">
             <h3>{name}</h3>

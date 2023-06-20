@@ -5,7 +5,7 @@ import './LandingPage.css';
 const LandingPage = () => {
     return(
     <div className="landing">
-        <div className="conteinerLanding">
+        <div className="containerLanding">
             <h1 className="title">Henry Food</h1>
             <h2 className="subtitle">The best place to start cooking</h2>
             <Link to ="/home">
@@ -21,7 +21,7 @@ export default LandingPage;
 /* export default function LandingPage(){
     return(
     <div className="landing">
-        <div className="conteinerLanding">
+        <div className="containerLanding">
         <h1 className="title">Henry Food</h1>
         <h2 className="subtitle">The best place to start cooking</h2>
         <Link to ="/home">

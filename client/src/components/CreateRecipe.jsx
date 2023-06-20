@@ -5,6 +5,8 @@ import { getDiets, postRecipe, getRecipes } from "../actions";
 import { Link, useHistory } from "react-router-dom";
 import './CreateRecipe.css'
 
+//Este componente se encarga de renderizar un formulario para crear una receta, utilizando datos obtenidos del estado global almacenado en Redux.
+
 
 function validate(input){
     let error = {}
@@ -110,7 +112,7 @@ export default function CreateRecipe(){
                     {error.step && (<span className="error">{error.step}</span>)}
                 </div>
                 <div>
-                    <label>Healt score:</label>
+                    <label>Health score:</label>
                     <input type='number'className="input" value={input.healthScore} name='healthScore'onChange={e => handleChange(e)}/>
                     {error.healthScore && (<span className="error">{error.healthScore}</span>)}
                 </div>

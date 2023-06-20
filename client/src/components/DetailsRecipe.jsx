@@ -39,7 +39,7 @@ export default function DetailsRecipe(){
                 ?
                 <div>
                     <div><Link to='/home'><button className="buttonBack" >Back to home</button></Link></div>
-                    <div className="conteinerDetails">
+                    <div className="containerDetails">
                         <h1>{detailRecipe[0].name}</h1>
                         <img className="detailImage" src={detailRecipe[0].image} alt='not found'/>
                         {!detailRecipe[0].createInDB && <button onClick={handleDelete}>ELIMINAR</button>}      

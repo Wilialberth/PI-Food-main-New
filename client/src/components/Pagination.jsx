@@ -22,7 +22,7 @@ export default function Pagination({ recipesPerPage, allRecipes }){
 
     return(
         <div >
-            <div className='paginationConteiner'>
+            <div className='paginationContainer'>
                 <ul className="pages">
                 { page >= 2 && 
                 <button onClick={() => pagination(1)} className="buttonPrevNext">{"<<"}</button>}
