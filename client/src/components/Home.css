@@ -1,0 +1,118 @@
+.fondoHome{
+    background-image: url('../images/Home.jpg');
+    min-height: 100vh;
+    max-height: 100wh;
+    background-position: 0cm;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* scroll-behavior: initial; */
+} 
+
+
+.CreateRecipe{
+    background-color: transparent;
+    color: rgb(11, 11, 11);
+    font-weight: bold;
+    font-size: 14.5px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: solid 2px;
+    margin-left: -152px;
+    opacity: 0.9;
+    text-decoration-line: none;
+    box-sizing: content-box;
+    font: bold;
+    align-items: center;
+    font: bold;
+    padding-top: -1px;
+    padding-right: 10px ; 
+    padding-left: 10px ;
+}
+
+.recipesBack{
+    background-color: transparent;
+    color: rgb(11, 11, 11);
+    font-weight: bold;
+    font-size: small;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-left: -155px;
+    opacity: 0.9;
+    font: bold;
+    padding-top: 4.5px
+}
+
+.navbar{
+    background-color: transparent;
+    height: 15rem;
+    justify-content:center;
+}  
+
+.navbarSearch{
+    padding: 2rem;
+    height: 20px;
+    margin-left: -10rem; 
+}
+
+.NavbarButton{
+    cursor: pointer;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1px;
+    margin-bottom: 1rem;
+    margin-left: -10rem;
+} 
+
+.order{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1px;
+    margin-bottom: 1rem;
+    margin-left: -10rem;
+}
+
+.filterByRecipes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1px;
+    margin-bottom: 1rem;
+    margin-left: -10rem;
+}
+.Pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 4rem;
+    padding: 1px;
+    margin-left: -10rem;
+    margin-top: -20px;
+}
+
+.cardgrid{
+    border: #545353b4 metalic 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: bold;
+    color: rgb(19, 19, 19);
+    overflow: hidden;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    box-shadow: 5px 5px 5px 1px rgb(34, 33, 33);
+    padding: 10px;
+    margin-right: 20rem ;
+    margin-left: 15rem;
+    background-color: whitesmoke; 
+    width:max-content;
+    height: min-content;
+    margin-left: 32rem;    
+}
+
+.recipeFilter{
+    color: black;
+}

@@ -1,6 +1,6 @@
 const express = require('express');
 const { Router } = require('express');
-const getTotalRecipes = require('../controllers/recipeControllers').getTotalRecipes;
+const getTotalRecipes = require('../controllers/recipeControllers')();
 //const getTotalRecipes = require('../controllers/recipeControllers');
 const { Recipe, Diet } = require('../db');
 
@@ -10,7 +10,7 @@ const router = Router();
 
 router.get('/', async (req, res, next) =>{ // Revisar '/recipes/name'
     const { name } = req.query
-    const recipesTotal = await getTotalRecipes();
+    const recipesTotal = await (getTotalRecipes());
     try{
         if(!name){
             res.status(200).send(recipesTotal)

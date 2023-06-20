@@ -1,0 +1,9 @@
+.mainNavBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px solid black;
+   margin-top: 2px;
+}
