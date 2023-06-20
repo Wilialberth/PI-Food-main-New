@@ -1,4 +1,5 @@
 import React from "react";
+//import CreateRecipe from "./CreateRecipe";
 import './CardRecipe.css'
 
 //Este componente puede ser utilizado en otros componentes de React para mostrar información de una receta específica, pasando las props correspondientes al componente CardRecipe.

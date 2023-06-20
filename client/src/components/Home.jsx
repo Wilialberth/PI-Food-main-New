@@ -114,7 +114,7 @@ return(
                     return(
                     <Link to={`/recipes/${e.id}`} key={e.id}>
                         <div className='cardgrid'>
-                            <CardRecipe
+                            <CardRecipe // quiero que mis CardRecipes se muestren en el home.
                                 name={e.name} 
                                 image= {e.image} 
                                 diets={e.diets}
