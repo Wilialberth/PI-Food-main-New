@@ -19,7 +19,7 @@ const getTotalDiets = async (req, res, next) =>{
         });
     }
 });
-        // comento y corrijo código ya que tenía un loop, dejo el código comentado que estaba antes para revisarlo.
+        // comento y corrijo código ya que tenía un loop, dejo el código comentado que había hecho antes para revisarlo.
        /*  let totalDietApi = dietApi.flat().forEach(diet => {
             let totalDietApi = dietApi.flat().forEach((diet) => {
                 if (!finalDiets.includes(diet)) {
