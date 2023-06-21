@@ -86,3 +86,5 @@ router.delete('/:id/delete', async (req, res, next) =>{
 })
 
 module.exports = router;
+
+//este archivo define las rutas relacionadas con las recetas en tu aplicación. Proporciona funcionalidades para obtener todas las recetas o filtrarlas por nombre, obtener una receta específica por ID, crear una nueva receta y eliminar una receta existente.
