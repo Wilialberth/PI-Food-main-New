@@ -106,3 +106,5 @@ function rootReducer( state= initialState, action){
 }
 
 export default rootReducer;
+
+//El reducer es el único autorizado a realizar modificaciones de mi objeto global (store).
