@@ -24,11 +24,11 @@ module.exports = (sequelize) => {
     step:{
       type: DataTypes.TEXT
     },
-    createdInDB: {
+    /* createdInDB: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
       defaultValue: true
-    },
+    }, */
     image: {
       type: DataTypes.STRING,
       allowNull: true,
