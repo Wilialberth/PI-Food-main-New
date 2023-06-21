@@ -12,11 +12,11 @@ axios.defaults.baseURL = 'https://pi-food-production-cd82.up.railway.app/'
 
 
 
-ReactDOM.render(
-  <Provider store = {store} >
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ReactDOM.render( // le paso el Provider para que mi redux esté conectado con mi aplicación de react.
+  <Provider store = {store}> 
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
   </Provider>,
   document.getElementById('root')
 );

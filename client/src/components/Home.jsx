@@ -89,7 +89,7 @@ return(
                         <option value= 'desc'>Z-A</option>
                     </select>
                     <select onChange={e => handleSortHealth(e)}>
-                        <option value= 'asc'>Healt score</option>
+                        <option value= 'asc'>Health score</option>
                         <option value= 'asc'>Ascendent</option>
                         <option value= 'desc'>Descendent</option>
                     </select>

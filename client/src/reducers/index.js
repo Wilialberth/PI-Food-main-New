@@ -4,7 +4,7 @@ const initialState = {
     diets : [],
     allRecipes : [],
     details: []    
-}
+} // este es mi estado global.
 
 function rootReducer( state= initialState, action){
     switch (action.type){
