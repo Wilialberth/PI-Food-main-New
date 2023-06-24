@@ -1,6 +1,9 @@
 const axios = require('axios');
 const { Recipe, Diet } = require('../db');
 
+//${API_URL}complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=100&offset=100
+//https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}&includeNutrition=true
+
 
 const getApiRecipes = async () => {
     try {
@@ -8,7 +11,7 @@ const getApiRecipes = async () => {
 
      /* const recipesUrl = axios.get(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}`).data */
    
-      const recipesUrl = await axios.get(`${API_URL}complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=100&offset=100`, { headers: { 'Accept-Encoding': 'identity' } });
+      const recipesUrl = await axios.get(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${API_KEY}`).data; // { headers: { 'Accept-Encoding': 'identity' } })
   
       if (!recipesUrl.data || !recipesUrl.data.results || !Array.isArray(recipesUrl.data.results)) {
         throw new Error('Invalid API response');

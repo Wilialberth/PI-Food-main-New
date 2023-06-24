@@ -1,12 +1,15 @@
 import axios from 'axios'
 
+//const GET_RECIPES = "GET_RECIPES" // eslint-disable-next-line
+//const GET_RECIPES_NAME = "GET_RECIPES_NAME" // eslint-disable-next-line
+
 
 export function getRecipes(){
     return async function (dispatch){
         return await fetch('http://localhost:3001/recipes')
         .then(response => response.json())
         .then((json) =>{
-        return dispatch({
+        return dispatch({ //uso dispatch para poder llegar al Reducer
             type:'GET_RECIPES',
             payload: json
         })
